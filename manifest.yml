@@ -1,0 +1,9 @@
+---
+applications:
+- name: price-service
+  memory: 768M
+  instances: 1
+  random-route: true
+  path: build/libs/price-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+
